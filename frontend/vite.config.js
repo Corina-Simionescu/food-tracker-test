@@ -9,7 +9,10 @@ export default defineConfig({
     emptyOutDir: true,
     manifest: true,
     rollupOptions: {
-      input: "/src/main.jsx",
+      // input: "/src/main.jsx",
+      input: {
+        main: resolve(__dirname, "index.html"),
+      },
     },
   },
   server: {

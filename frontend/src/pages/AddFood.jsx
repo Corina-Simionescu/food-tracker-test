@@ -206,7 +206,7 @@ function AddFood() {
 
           fetchedNutritionData.amount = responseData.servings.number;
 
-          fetchedNutritionData.unit("servings");
+          fetchedNutritionData.unit = "servings";
 
           break;
         }
